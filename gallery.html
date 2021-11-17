@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="tailwind.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <title>.Sowatt</title>
+</head>
+<body class="w-full">
+    <header class="py-5 border-b border-gray-400 sticky top-0 z-50 bg-white">
+        <div class="flex w-9/12 mx-auto justify-center justify-between">
+            <button type="button" class="text-2xl font-bold my-auto text-gray-800"><a href="index.html">.SO<span class="text-yellow-400">WATT</span></a></button>
+            <nav class="hidden lg:flex justify-end">
+                <a class="px-3 my-auto" href="index.html">About</a>
+                <a class="px-3 my-auto" href="gallery.html">Gallery</a>
+                <a href="index.html"><button type="button" class="mx-3 bg-gray-800 text-sm text-white font-semibold rounded-lg p-2 ">Testimonial</button></a>
+            </nav>
+            <div class="lg:hidden">
+                <button class="navbar-burger flex items-center text-yellow-400 p-3">
+                    <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Mobile menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="navbar-menu relative z-50 hidden">
+                <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+                <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+                    <div class="flex justify-between items-center mb-8">
+                        <button type="button" class="text-2xl font-bold my-auto text-gray-800"><a href="">.SO<span class="text-yellow-400">WATT</span></a></button>
+                        <button class="navbar-close">
+                            <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="mb-1">
+                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-yellow-50 hover:text-yellow-600 rounded close-navbar" href="index.html">About</a>
+                            </li>
+                            <li class="mb-1">
+                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-yellow-50 hover:text-yellow-600 rounded close-navbar" href="index.html">Testimonial</a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="my-4 text-xs text-center text-gray-400">
+                            <span>Copyright 2021 • All rights reserved • SowattProductions</span>
+                        </p>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="mx-auto sm:w-5/12 md:w-6/12 lg:w-9/12 pb-32 pl3" id="gallery">
+            <h2 class="text-center text-4xl md:text-5xl font-bold text-gray-800 pt-10 pb-8">Gallery</h2>
+            <p class="text-center font-base text-gray-800 text-xl pb-16">Design your place with amazing decoration, it brings together <br> people and every person to enjoy the environment – all in one service</p>
+            <!-- <div class="gridman" data-masonry='{ "itemSelector": ".grid-item", "gutter": 15 }'> -->
+            <div class="gridman">
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_1.jpeg" class="h-full rounded-md img-wrapper" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_2.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_3.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_4.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_5.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_6.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_7.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_8.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_9.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_10.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_11.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_12.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_13.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_14.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_15.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_16.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_17.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_18.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_19.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_20.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_21.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_22.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_23.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_24.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_25.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_26.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_27.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_28.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_29.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_30.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_31.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_32.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_33.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_34.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_35.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_36.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_37.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_38.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_39.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+                <div class="grid-item w-96 my-2 card-featured">
+                    <div class="tag bg-yellow-400 m-2 text-white rounded-md">
+                        <p class="font-semibold">IDR <span class="font-medium">500.000</span></p>
+                    </div>
+                    <img src="./public/assets/images/gallery_img_40.jpeg" class="h-full rounded-md" alt="image_gallery">
+                    <div class="meta-wrapper">
+                        <span class="text-white font-semibold text-lg">Item name</span>
+                    </div>
+                </div>
+        </section>
+        <footer class="py-6">
+            <div class="text-center">Copyright 2021 • All rights reserved • SowattProductions</div>
+        </footer>
+    </main>
+</body>
+</html>
+
+<script defer src="https://pro.fontawesome.com/releases/v5.10.0/js/all.js" integrity="sha384-G/ZR3ntz68JZrH4pfPJyRbjW+c0+ojii5f+GYiYwldYU69A+Ejat6yIfLSxljXxD" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="./masonry.pkgd.min.js"></script>
+<script src="./imagesloaded.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+<script src="./script.js"></script>
+
+<script>
+    var grid = document.querySelector('.gridman');
+    var msnry;
+
+    imagesLoaded( grid, function() {
+    msnry = new Masonry( grid, {
+        itemSelector: '.grid-item',
+        gutter: 15,
+        percentPosition: true
+    });
+});
+
+</script>

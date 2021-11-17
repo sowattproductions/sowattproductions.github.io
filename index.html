@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="tailwind.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <title>.Sowatt</title>
+</head>
+<body class="w-full">
+    <header class="py-5 border-b border-gray-400 sticky top-0 z-50 bg-white">
+        <div class="flex w-9/12 mx-auto justify-center justify-between">
+            <button type="button" class="text-2xl font-bold my-auto text-gray-800"><a href="">.SO<span class="text-yellow-400">WATT</span></a></button>
+            <nav class="hidden lg:flex justify-end">
+                <a class="px-3 my-auto" href="#about">About</a>
+                <a class="px-3 my-auto" href="gallery.html">Gallery</a>
+                <a href="#testi"><button type="button" class="mx-3 bg-gray-800 text-sm text-white font-semibold rounded-lg p-2 ">Testimonial</button></a>
+            </nav>
+            <div class="lg:hidden">
+                <button class="navbar-burger flex items-center text-yellow-400 p-3">
+                    <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Mobile menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="navbar-menu relative z-50 hidden">
+                <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+                <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+                    <div class="flex justify-between items-center mb-8">
+                        <button type="button" class="text-2xl font-bold my-auto text-gray-800"><a href="">.SO<span class="text-yellow-400">WATT</span></a></button>
+                        <button class="navbar-close">
+                            <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="mb-1">
+                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-yellow-50 hover:text-yellow-600 rounded close-navbar" href="#about">About</a>
+                            </li>
+                            <li class="mb-1">
+                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-yellow-50 hover:text-yellow-600 rounded" href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="mb-1">
+                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-yellow-50 hover:text-yellow-600 rounded close-navbar" href="#testi">Testimonial</a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="my-4 text-xs text-center text-gray-400">
+                            <span>Copyright 2021 • All rights reserved • SowattProductions</span>
+                        </p>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="mt-20">
+        <section class="pt-14">
+            <div class="flex lg:w-9/12 mx-auto lg:p-0">
+                <div class="flex-1 hidden lg:flex justify-center items-center">
+                    <div class="rounded-3xl border-solid border-2 border-yellow-400">
+                        <img src="../public/assets/images/hero_img.png" alt="lamps" class="h-96 rounded-3xl transform translate-x-8 translate-y-8">
+                    </div>
+                </div>
+                <div class="flex-1 flex justify-center items-center">
+                    <div class="px-10">
+                        <h1 class="text-5xl font-bold text-gray-800">Make a place comfortable & elegant</h1>
+                        <p class="pt-6 text-xl text-gray-400 leading-7">Having a good place means having decoration that make every corner of your place feel so alive. 
+                            We are proud to bring you trendy decoration for every place you like to choose, with the added bonus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffd700" fill-opacity="1" d="M0,160L48,154.7C96,149,192,139,288,144C384,149,480,171,576,186.7C672,203,768,213,864,218.7C960,224,1056,224,1152,218.7C1248,213,1344,203,1392,197.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        <section class="px-4" style="background-color: #ffd700">
+            <div class="lg:w-6/12 mx-auto pb-20  md:pb-40">
+                <div class="grid grid-rows-3 grid-cols-2 lg:grid-rows-1 lg:grid-cols-6 gap-4 bg-white py-5 px-8 lg:h-44 rounded-3xl">
+                    <h2 class="flex justify-center items-center text-2xl font-bold col-span-2">Why choosing us</h2>
+                    <div class="flex justify-center items-center">
+                        <div class="p-2 filter drop-shadow-lg">
+                            <div class="flex justify-center items-center">
+                                <img src="../public/assets/images/shield.png" alt="safe" class="h-16 bg-yellow-400 p-4 text rounded-md">
+                            </div>
+                            <p class="pt-3 text-gray-800">Reliable</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <div class="p-2 filter drop-shadow-lg">
+                            <div class="flex justify-center items-center">
+                                <img src="../public/assets/images/guaranteed.png" alt="safe" class="h-16 bg-yellow-400 p-4 text rounded-md">
+                            </div>
+                            <p class="pt-3 text-gray-800">Guaranteed</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <div class="p-2 filter drop-shadow-lg">
+                            <div class="flex justify-center items-center">
+                                <img src="../public/assets/images/durability.png" alt="safe" class="h-16 bg-yellow-400 p-4 text rounded-md">
+                            </div>
+                            <p class="pt-3 text-gray-800">Durable</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <div class="p-2 filter drop-shadow-lg">
+                            <div class="flex justify-center items-center">
+                                <img src="../public/assets/images/puzzle.png" alt="safe" class="h-16 bg-yellow-400 p-4 text rounded-md">
+                            </div>
+                            <p class="pt-3 text-gray-800">Compatible</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-9/12 mx-auto block lg:flex px-4">
+                <div class="flex-1 flex justify-center items-center pb-14">
+                    <div>
+                        <h2 class="text-white font-bold text-4xl md:text-5xl">Shop by place</h2>
+                        <p class="pt-2 lg:w-9/12 text-xl text-white leading-7">Choose your decoration base on what your place need, here we provide variety of decoration you can choose. So the place will look perfect because the decoration match with your place.</p>
+                    </div>
+                </div>
+                <div class="flex-1 filter drop-shadow-md">
+                    <div class="flex justify-center items-center">
+                        <div class="bg-gray-800 rounded-md">
+                            <div class="flex w-80">
+                                <img src="../public/assets/images/living_room.jpeg" alt="living_room" class="h-24 md:h-32 rounded-md">
+                                <p class="my-auto mx-auto lg:text-lg font-semibold text-white">Beach</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid xl:grid-cols-2 gap-5 py-5">
+                        <div class="flex justify-center items-center xl:pr-16">
+                            <div class="rounded-md" style="background-color: #A88E00;">
+                                <div class="flex w-80">
+                                    <img src="../public/assets/images/dining_room.jpeg" alt="living_room" class="h-24 md:h-32 rounded-md">
+                                    <p class="my-auto mx-auto lg:text-lg font-semibold text-white">Villa</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <div class="rounded-md" style="background-color: #A88E00;">
+                                <div class="flex w-80">
+                                    <img src="../public/assets/images/kitchen.jpeg" alt="living_room" class="h-24 md:h-32 rounded-md">
+                                    <p class="my-auto mx-auto lg:text-lg font-semibold text-white">Backyard</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <div class="bg-gray-800 rounded-md">
+                            <div class="flex w-80">
+                                <img src="../public/assets/images/office_room.jpeg" alt="living_room" class="h-24 md:h-32 rounded-md">
+                                <p class="my-auto mx-auto lg:text-lg font-semibold text-white">Hall</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <svg xmlns="http://www.w3.org/2000/svg" transform='rotate(180), translate(0 1)' viewBox="0 0 1440 320"><path fill="#ffd700" fill-opacity="1" d="M0,160L48,154.7C96,149,192,139,288,144C384,149,480,171,576,186.7C672,203,768,213,864,218.7C960,224,1056,224,1152,218.7C1248,213,1344,203,1392,197.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        <section class="pb-32 px-4" id="about">
+            <h2 class="text-gray-800 text-center text-4xl md:text-5xl font-bold pb-8">More about us</h2>
+            <div class="lg:w-9/12 mx-auto lg:flex bg-white rounded-lg lg:p-8">
+                <div class="flex-1 flex justify-center items-center">
+                    <div>
+                        <div class="flex">
+                            <div class="my-auto">
+                                <i class="fas fa-square-full fa-lg"></i>
+                            </div>
+                            <h3 class="font-bold text-yellow-400 pl-2 text-md md:text-xl">What are we ?</h3>
+                        </div>
+                        <h2 class="text-2xl md:text-3xl font-bold py-3">SOWATT Productions</h2>
+                        <p class="text-gray-400 lg:w-96 leading-7">
+                            We are engaged in lighting and productions to meet the needs of decoration. We will help you to determine the right decoration concept or theme for your event at an affordable price.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex-1 p-8 bg-yellow-100 rounded-lg mt-4 lg:mt-0">
+                    <div class="grid grid-flow-row md:grid-flow-col gap-3 filter drop-shadow-lg">
+                        <div class="row-span-2 lg:hidden xl:block">
+                            <img src="./public/assets/images/about_1.jpeg" alt="about_image1" class="h-full md:h-full rounded-lg">
+                        </div>
+                        <div class="">
+                            <img src="./public/assets/images/about_2.jpeg" alt="about_image2" class="h-full md:h-52 rounded-lg">
+                        </div>
+                        <div class="">
+                            <img src="./public/assets/images/about_3.jpeg" alt="about_image3" class="h-full md:h-52 rounded-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-9/12 mx-auto flex bg-white mt-4 lg:mt-0 lg:p-8 flex-col-reverse lg:flex-row">
+                <div class="flex-1">
+                    <div class="grid lg:grid-rows-2 grid-rows-4 lg:grid-rows-1 grid-flow-col p-4 gap-6 bg-yellow-100 rounded-lg">
+                        <div class="filter drop-shadow-lg p-8 bg-white rounded-md">
+                            <i class="fas fa-envelope fa-2x text-yellow-400"></i>
+                            <h3 class="text-lg font-bold pt-2">Email</h3>
+                            <p>iniexample@mail.com</p>
+                        </div>
+                        <div class="filter drop-shadow-lg p-8 bg-white rounded-md">
+                            <i class="fas fa-phone-alt fa-2x text-green-400"></i>
+                            <h3 class="text-lg font-bold pt-2">Whatsapp</h3>
+                            <p>08xxxxxxxxxx</p>
+                        </div>
+                        <div class="filter drop-shadow-lg p-8 bg-white rounded-md">
+                            <i class="fas fa-camera fa-2x text-red-400"></i>
+                            <h3 class="text-lg font-bold pt-2">Instagram</h3>
+                            <p>SowattProductions</p>
+                        </div>
+                        <div class="filter drop-shadow-lg p-8 bg-white rounded-md">
+                            <i class="fas fa-map-marker-alt fa-2x text-blue-400"></i>
+                            <h3 class="text-lg font-bold pt-2">Location</h3>
+                            <p>Kemang, Jakarta</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 lg:flex lg:justify-center lg:items-center py-8">
+                    <div>
+                        <div class="flex flex-row-reverse">
+                            <div class="my-auto">
+                                <i class="fas fa-square-full fa-lg"></i>
+                            </div>
+                            <h3 class="text-right font-bold text-yellow-400 pr-2 text-md md:text-xl">How to stay in touch with us ?</h3>
+                        </div>
+                        <h2 class="text-2xl md:text-3xl text-right font-bold py-3">Contact</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="testi">
+            <div class="bg-gray-100 pb-16">
+                <h1 class="text-4xl font-bold py-10 text-center">Our clients reviews</h1>
+                <div>
+                    <div class="carousel"
+                    data-flickity='{ "wrapAround": true }'>
+                    <div class="carousel-cell">
+                        <div class="bg-white p-5 filter drop-shadow-lg rounded-lg h-52">
+                            <p class="testipara">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p class="font-bold absolute bottom-5 text-gray-400">Username 1</p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="bg-white p-5 filter drop-shadow-lg rounded-lg h-52">
+                            <p class="testipara">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p class="font-bold absolute bottom-5 text-gray-400">Username 2</p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="bg-white p-5 filter drop-shadow-lg rounded-lg h-52">
+                            <p class="testipara">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p class="font-bold absolute bottom-5 text-gray-400">Username 3</p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="bg-white p-5 filter drop-shadow-lg rounded-lg h-52">
+                            <p class="testipara">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p class="font-bold absolute bottom-5 text-gray-400">Username 4</p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="bg-white p-5 filter drop-shadow-lg rounded-lg h-52">
+                            <p class="testipara">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p class="font-bold absolute bottom-5 text-gray-400">Username 5</p>
+                        </div>
+                    </div>
+                  </div>                  
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-6">
+        <div class="text-center">Copyright 2021 • All rights reserved • SowattProductions</div>
+    </footer>
+</body>
+</html>
+
+<script defer src="https://pro.fontawesome.com/releases/v5.10.0/js/all.js" integrity="sha384-G/ZR3ntz68JZrH4pfPJyRbjW+c0+ojii5f+GYiYwldYU69A+Ejat6yIfLSxljXxD" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="./masonry.pkgd.min.js"></script>
+<script src="./script.js"></script>
